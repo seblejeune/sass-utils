@@ -1,0 +1,38 @@
+{
+  "name": "sass-utils",
+  "version": "0.0.1-alpha",
+  "description": "Sass utility to start your projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/actito/sass-utils.git"
+  },
+  "keywords": [
+    "SASS",
+    "utility",
+    "CSS"
+  ],
+  "author": {
+    "name": "Sébastien Lejeune",
+    "email": "sebastien.lejeune@actito.com",
+    "url": "http://www.actito.com"
+  },
+  "scripts": {
+    "clean-install": "rm -rf node_modules && npm install",
+    "sass-doc": "gulp --gulpfile tools/Gulpfile.js sassdoc",
+    "test": "mocha $(find test -name '*.js')"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/actito/sass-utils/issues"
+  },
+  "homepage": "https://github.com/actito/sass-utils#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-help": "^1.6.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-load-subtasks": "^1.1.2",
+    "mocha": "^3.4.2",
+    "sassaby": "^2.1.1",
+    "sassdoc": "^2.3.0"
+  }
+}

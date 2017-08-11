@@ -1,0 +1,10 @@
+script: npm run test
+
+language: node_js
+
+node_js:
+  - '6.9.2'
+
+# Disable email notifications
+notifications:  
+  email: false
