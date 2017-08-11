@@ -4,7 +4,7 @@ sass-utils is a set of mixins, functions, helpers to help you write easily your 
 
 ## Status : 
 
-[![Build Status](https://travis-ci.org/actito/sass-utils.svg?branch=develop)](https://travis-ci.org/actito/sass-utils)
+[![Build Status](https://travis-ci.org/actito/sass-utils.svg?branch=master)](https://travis-ci.org/actito/sass-utils)
 
 ## Install : 
 ### npm
