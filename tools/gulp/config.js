@@ -16,7 +16,7 @@ module.exports = {
 				groups: {
 					undefined: "Global utils"
 				},
-				dest: "../sassdoc"
+				dest: "../docs"
 			}
 	}
 }

@@ -1,9 +1,8 @@
 .sass-cache/
 *.css.map
+css/
 
 .DS_Store
-
-sassdoc
 
 node_modules/
 
