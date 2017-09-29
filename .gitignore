@@ -2,6 +2,8 @@
 *.css.map
 css/
 
+!docs/assets/css
+
 .DS_Store
 
 node_modules/
