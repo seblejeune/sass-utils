@@ -1,1 +1,12 @@
-@import 'mixins/flex-mixins'
+@import './config';
+
+@import 'mixins/flex-mixins';
+@import 'mixins/padding';
+@import 'mixins/margin';
+@import 'mixins/border';
+@import 'mixins/border-radius';
+@import 'mixins/utils';
+@import 'mixins/font';
+@import 'mixins/bem-extended';
+
+@import 'css-class-generator'

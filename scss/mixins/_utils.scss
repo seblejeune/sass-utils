@@ -1,0 +1,27 @@
+////
+/// @access public
+/// @group Utils
+////
+
+/// Manage disabled on element
+/// @param {int} $opacity [$disabled-opacity-var]
+/// @param {Cursor} $cursor [$disabled-cursor-var]
+/// @require $disabled-opacity-default
+/// @require $disabled-cursor-default
+@mixin disabled($opacity: $disabled-opacity-default, $cursor: $disabled-cursor-default) {
+	opacity: $opacity;
+	cursor: $cursor;
+}
+
+/// Manage disabled on element
+/// @param {int} $opacity [$disabled-opacity-var]
+/// @param {Cursor} $cursor [$disabled-cursor-var]
+/// @require $disabled-opacity-default
+/// @require $disabled-cursor-default
+/// @require $disabled-class-name-default
+/// @output disabled css class with disabled mixins properties
+@mixin disabled-class($opacity: $disabled-opacity-default, $cursor: $disabled-cursor-default) {
+  .#{$disabled-class-name-default} {
+    @include disabled($opacity, $cursor);
+	}
+}

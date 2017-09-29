@@ -1,0 +1,24 @@
+////
+/// @access public
+/// @group Padding
+////
+
+/// Padding shorthand version
+/// @param {int} $padding [$padding-default]
+/// @require $padding-default
+@mixin padding($padding: $padding-default) {
+  padding: $padding;
+}
+
+/// Padding longhand version
+/// @param {int} $top [$padding-all-default]
+/// @param {int} $right [$padding-all-default]
+/// @param {int} $bottom [$padding-all-default]
+/// @param {int} $left [$padding-all-default]
+/// @require $padding-all-default
+@mixin padding-all($top: $padding-all-default, $right: $padding-all-default, $bottom: $padding-all-default, $left: $padding-all-default) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}

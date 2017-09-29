@@ -13,29 +13,29 @@
 }
 
 /// Declare all properties to define a container as display: flex.
-/// @param {Keyword} $direction [row] - Define direction of child of container, possible values : 
+/// @param {Keyword} $direction [$flex-container-direction-default] - Define direction of child of container, possible values : 
 /// 	- row
 ///		- column 
 ///		- row-reverse 
 ///		- column reverse
-/// @param {string} $wrap [nowrap] - Possible values : 
+/// @param {string} $wrap [$flex-container-wrap-default] - Possible values : 
 /// 	- nowrap
 /// 	- wrap
 /// 	- wrap-reverse
-/// @param {string} $align-content [stretch] - Possible values : 
+/// @param {string} $align-content [$flex-container-align-content-default] - Possible values : 
 /// 	- flex-start
 /// 	- flex-end
 /// 	- center
 /// 	- space-between
 /// 	- space-around
 /// 	- stretch
-/// @param {string} $align-items [stretch] - Possible values : 
+/// @param {string} $align-items [$flex-container-align-items-default] - Possible values : 
 /// 	- flex-start
 /// 	- flex-end
 /// 	- center
 /// 	- baseline
 /// 	- stretch
-/// @param {string} $justify-content [flex-start] - Possible values : 
+/// @param {string} $justify-content [$flex-container-justify-content-default] - Possible values : 
 /// 	- flex-start
 /// 	- flex-end
 /// 	- center
@@ -43,7 +43,12 @@
 /// 	- space-around
 /// 	- space-evenly
 /// @require {mixin} flex
-@mixin flex-container($direction: null, $wrap: null, $align-content: null, $align-items: null, $justify-content: null) {
+/// @require $flex-container-direction-default
+/// @require $flex-container-wrap-default
+/// @require $flex-container-align-content-default
+/// @require $flex-container-align-items-default
+/// @require $flex-container-justify-content-default
+@mixin flex-container($direction: $flex-container-direction-default, $wrap: $flex-container-wrap-default, $align-content: $flex-container-align-content-default, $align-items: $flex-container-align-items-default, $justify-content: $flex-container-justify-content-default) {
 	@include flex;
 	flex-direction: $direction;
 	flex-wrap: $wrap;
@@ -53,15 +58,18 @@
 }
 
 /// Define property for flex item
-/// @param {string} $flex [1 1 auto] !!!! auto is mandatory for IE
-/// @param {string} $align-self [stretch] - Possible values : 
+/// @param {string} $flex [$flex-items-flex-default] !!!! auto is mandatory for IE
+/// @param {string} $align-self [$flex-items-align-self-default] - Possible values : 
 /// 	- flex-start
 /// 	- flex-end
 /// 	- center
 /// 	- baseline
 /// 	- stretch
-/// @param {int} $order [null] - -1 to put element in first
-@mixin flex-item($flex: 1 1 auto, $align-self: null, $order: null) {
+/// @param {int} $order [$flex-items-order-default] - -1 to put element in first
+/// @require $flex-items-flex-default
+/// @require $flex-items-align-self-default
+/// @require $flex-items-order-default
+@mixin flex-item($flex: $flex-items-flex-default, $align-self: $flex-items-align-self-default, $order: $flex-items-order-default) {
   flex: $flex;
   align-self: $align-self;
   order: $order;

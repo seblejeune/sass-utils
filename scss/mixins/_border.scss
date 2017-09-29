@@ -1,0 +1,12 @@
+////
+/// @access public
+/// @group Border
+////
+
+/// Border shorthand version
+/// @param {int} $border [$border-default] - border specific value properties
+/// @require $border-default
+
+@mixin border($border: $border-default) {
+  border: $border;
+}

@@ -1,0 +1,53 @@
+////
+/// @access public
+/// @group BEM Extended
+////
+
+/// Function to target an element in a modifier
+/// @param $name-element
+/// @param $name-modifier
+@mixin element-in-modifier($name-element, $name-modifier) {
+  @at-root {
+	&#{$modifier-separator}#{$name-modifier} &#{$element-separator}#{$name-element} {
+	  @content;
+	}
+  }
+}
+
+/// Function to target an element followed by same element
+/// @access public
+/// @param {string} $block
+/// @param {string} $block-after
+@mixin target-block-after($block, $block-after) {
+  .#{$block} + .#{$block-after} {
+    @content;
+  }
+}
+
+/// Function to target an element followed by same element
+/// @access public
+/// @param {string} $block
+@mixin target-siblings-block($block) {
+  .#{$block} + .#{$block} {
+    @content;
+  }
+}
+
+/// Function to target an element followed by same element
+/// @access public
+/// @param {string} $element
+@mixin siblings-elements($element) {
+  &__#{$element} ~ &__#{$element} {
+    @content;
+  }
+}
+
+/// Function to target elements after a given element
+/// @access public
+/// @param {string} $element
+/// @param {string} $other-element
+@mixin siblings-differents-elements($element, $other-element) {
+  &__#{$element} ~ &__#{$other-element} {
+    @content;
+  }
+}

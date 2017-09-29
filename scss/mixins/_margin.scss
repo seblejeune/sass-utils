@@ -1,0 +1,24 @@
+////
+/// @access public
+/// @group Margin
+////
+
+/// Margin shorthand version
+/// @param {int} $margin [$margin-default]
+/// @require $margin-default
+@mixin margin($margin: $margin-default) {
+  margin: $margin;
+}
+
+/// Margin longhand version
+/// @param {int} $top [$margin-all-default]
+/// @param {int} $right [$margin-all-default]
+/// @param {int} $bottom [$margin-all-default]
+/// @param {int} $left [$margin-all-default]
+/// @require $margin-all-default
+@mixin margin-all($top: $margin-all-default, $right: $margin-all-default, $bottom: $margin-all-default, $left: $margin-all-default) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}

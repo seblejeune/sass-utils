@@ -1,0 +1,143 @@
+////
+/// @access public
+////
+
+/// Default value for border mixins, possibility to overide
+/// @group Border
+/// @type String
+$border-default: 0px !default;
+
+/// Default value for border radius mixins, possibility to overide
+/// @group Border Radius
+/// @type String
+$border-radius-default: 5px !default;
+
+/// Default value for padding mixins, possibility to overide
+/// @group Padding
+/// @type String
+$padding-default: 0px !default;
+
+/// Default value for padding-all mixins, possibility to overide
+/// @group Padding
+/// @type String
+$padding-all-default: null !default;
+
+/// Default value for margin mixins, possibility to overide
+/// @group Margin
+/// @type String
+$margin-default: 0px !default;
+
+/// Default value for margin-all mixins, possibility to overide
+/// @group Margin
+/// @type String
+$margin-all-default: null !default;
+
+/// Default value for opacity to disabled an element
+/// @group Utils
+/// @type int
+$disabled-opacity-default: 0.5 !default;
+
+/// Default cursor for disabled element
+/// @group Utils
+/// @type Cursor
+$disabled-cursor-default: not-allowed !default;
+
+/// Default class name for generated rules
+/// @group Utils
+$disabled-class-name-default: 'disabled'!default;
+
+/// Default value for direction in flex-container mixins
+/// @group Flex
+/// @type String
+$flex-container-direction-default: null !default;
+
+/// Default value for wrap in flex-container mixins
+/// @group Flex
+/// @type String
+$flex-container-wrap-default: null !default;
+
+/// Default value for align-content in flex-container mixins
+/// @group Flex
+/// @type String
+$flex-container-align-content-default: null !default;
+
+/// Default value for align-items in flex-container mixins
+/// @group Flex
+/// @type String
+$flex-container-align-items-default: null !default;
+
+/// Default value for justify-content in flex-container mixins
+/// @group Flex
+/// @type String
+$flex-container-justify-content-default: null !default;
+
+/// Default value for flex in flex-items mixins
+/// @group Flex
+/// @type String
+$flex-items-flex-default: 1 1 auto !default;
+
+/// Default value for align-self in flex-items mixins
+/// @group Flex
+/// @type String
+$flex-items-align-self-default: null !default;
+
+/// Default value for order in flex-items mixins
+/// @group Flex
+/// @type String
+$flex-items-order-default: null !default;
+
+/// Default value for color in fontawesome mixins
+/// @group Font
+/// @type Color
+$fontawesome-color-default: inherit !default;
+
+/// Default value for font-size in fontawesome mixins
+/// @group Font
+/// @type int
+$fontawesome-font-size-default: inherit !default;
+
+/// Default value for color in font mixins
+/// @group Font
+/// @type Color
+$font-color-default: null !default;
+
+/// Default value for font-weight in font mixins
+/// @group Font
+/// @type String
+$font-font-weight-default: null !default;
+
+/// Default value for font-stylr in font mixins
+/// @group Font
+/// @type String
+$font-font-style-default: null !default;
+
+/// Default value for font-size in font mixins
+/// @group Font
+/// @type String
+$font-font-size-default: null !default;
+
+/// Default value for line-height in font mixins
+/// @group Font
+/// @type String
+$font-line-height-default: null !default;
+
+/// Default value for text-ransform in font mixins
+/// @group Font
+/// @type String
+$font-text-transform-default: null !default;
+
+/// Default value for text-align in font mixins
+/// @group Font
+/// @type String
+$font-text-align-default: null !default;
+
+/// Default value for text-decoration in font mixins
+/// @group Font
+/// @type String
+$font-text-decoration-default: null !default;
+
+
+/// Defined if we need to generate the utility CSS Class
+/// @group Utils
+/// @type boolean
+$generate-css-class: true!default;

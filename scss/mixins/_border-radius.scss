@@ -1,0 +1,39 @@
+////
+/// @access public
+/// @group Border Radius
+/// @require $border-radius-default
+////
+
+/// Define border radius
+/// @param {int} $border-radius-default [$border-radius-default]
+@mixin border-radius($radius: $border-radius-default) {
+  border-radius: $radius;
+}
+
+/// Define top border radius
+/// @param {int} $radius [$border-radius-default]
+@mixin border-top-radius($radius: $border-radius-default) {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+/// Define bottom border radius
+/// @param {int} $radius [$border-radius-default]
+@mixin border-bottom-radius($radius: $border-radius-default) {
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+/// Define left border radius
+/// @param {int} $radius [$border-radius-default]
+@mixin border-left-radius($radius: $border-radius-default) {
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+/// Define right border radius
+/// @param {int} $radius [$border-radius-default]
+@mixin border-right-radius($radius: $border-radius-default) {
+  border-top-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+}

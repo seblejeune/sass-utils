@@ -1,0 +1,49 @@
+////
+/// @access public
+/// @group Font
+////
+
+/// Manage fontawesome
+/// @param {string} $content : code of the icon, for example : '\f105' (always 4 characters preceded by \ ) - see all on http://fontawesome.io/cheatsheet/
+/// @param {color} $color [$fontawesome-color-default]
+/// @param {int} $fontsize [$fontawesome-font-size-default]
+/// @require $fontawesome-color-default
+/// @require $fontawesome-font-size-default
+@mixin fontawesome($content, $color: $fontawesome-color-default, $font-size: $fontawesome-font-size-default) {
+  display: inline-block;
+  text-rendering: auto;
+  color: $color;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: $font-size;
+  content: $content;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/// Manage all properties for font element
+/// @param {color} $color [$font-color-default]
+/// @param {string} $font-weight [$font-font-weight-default]
+/// @param {string} $font-style [$font-font-style-default]
+/// @param {int} $font-size [$font-font-size-default]
+/// @param {int} $line-height [$font-line-height-default]
+/// @param {string} $text-transform [$font-text-transform-default]
+/// @param {string} $text-align [$font-text-align-default]
+/// @param {string} $text-decoration [$font-text-decoration-default]
+/// @require $font-color-default
+/// @require $font-font-weight-default
+/// @require $font-font-style-default
+/// @require $font-font-size-default
+/// @require $font-line-height-default
+/// @require $font-text-transform-default
+/// @require $font-text-align-default
+/// @require $font-text-decoration-default
+@mixin font($color: $font-color-default, $font-weight: $font-font-weight-default, $font-style: $font-font-style-default, $font-size: $font-font-size-default, $line-height: $font-line-height-default, $text-transform: $font-text-transform-default, $text-align: $font-text-align-default, $text-decoration: $font-text-decoration-default) {
+  text-align: $text-align;
+  text-transform: $text-transform;
+  text-decoration: $text-decoration;
+  line-height: $line-height;
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
